@@ -3,6 +3,7 @@
 
 ## How it works
 ![gif](https://github.com/allanmviana/KindleNotebook2Notion.py/blob/main/img/Preview.gif)
+
 Everytime you read a book from amazon ou send a document thru email to kindle, you can open it with your app too.
 This way, you may open the book whithin the app and then share your notes.
 
