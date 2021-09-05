@@ -4,7 +4,7 @@ import os
 from bs4 import BeautifulSoup
 
 # Get the file localization. Desktop as default
-os.chdir('C:/Users/allan/Desktop')
+os.chdir('C:/Users/allanmviana/Desktop') #ADD YOUR FILE LOCATION HERE. MY DEAFULT IN DESKTOP
 file_loc = input("What is the file name? \n")
 
 #Importing the file
@@ -17,7 +17,7 @@ Title = soup.find("div", class_ = 'bookTitle').getText().replace("\n", "").split
 # If a Div is a 'sectionHeading' then it is a h2 title (##)
 # Else if a div is a 'noteText' then it is a quote (>)
 qnt = 0
-with open(str(Title + '.txt'), 'w') as f:
+with open(str(Title + '.txt'), 'w', encoding="utf-8") as f:
     for x in soup.find_all("div"):
         if soup.find_all("div")[qnt]['class'] == ['sectionHeading']:
             print("\n## " + soup.find_all("div")[qnt].getText().replace("\n",""), file=f)
